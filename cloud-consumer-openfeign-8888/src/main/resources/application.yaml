@@ -1,0 +1,19 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: nacos-consumer-openfegin-8888
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.100.226.124:8848
+
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
